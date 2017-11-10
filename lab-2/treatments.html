@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Våra behandlingar</title>
+    <title>Our treatments</title>
 
     <!-- Bootstrap -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
@@ -22,33 +22,75 @@
     <![endif]-->
     </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-                <a class="navbar-brand" href="#"><span><i class="fa fa-sign-language" aria-hidden="true"></i> Gittans</span></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid bg-info">
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><span><i class="fa fa-sign-language" aria-hidden="true"></i> Git's</span></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse-1">        
+            <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Treatments
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="active"><a href="treatments.html">All treatments</a></li>
+                          <li><a href="classic-massage.html">Classic Massage</a></li>
+                          <li><a href="tactile-massage.html">Tactile Massage</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
             </div>
-            <div class="collapse navbar-collapse" id="collapse-1">        
-        <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li class="dropdown active">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Treatments
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Classic Massage</a></li>
-                      <li><a href="#">Tactile Massage</a></li>
-                    </ul>
-                  </li>
-                <li><a href="#">About</a></li>
-        </ul>
         </div>
-    </div>
-    </div>
-</nav>
+        </div>
+    </nav>
+    
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            Classic massage
+                        </div>
+                        </div>
+                        <div class="panel-body text-center">
+                            <img class="img-responsive" src="images/couple.jpg">
+                            Irony umami literally, chia austin echo park tilde iPhone truffaut wolf subway tile...
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="classic-massage.html"><button type="button" class="btn btn-info">Read more</button></a>
+                        </div>
+                </div> <!-- panel -->
+            </div> <!-- column -->
+            <div class="col-sm-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                Tactile massage
+                            </div>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img class="img-responsive" src="images/tactile.jpg">
+                                Drinking vinegar blue bottle XOXO plaid tofu, vape mixtape...
+                            </div>
+                            <div class="panel-footer text-center">
+                               <a href="tactile-massage.html"><button type="button" class="btn btn-info">Read more</button></a> 
+                            </div>
+                    </div> <!-- panel -->
+                </div> <!-- column -->
+        </div>
+      </div>
+      <ol class="breadcrumb">
+            <li><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
+            <li class="active">All treatments</li>
+          </ol>
 </body>
 </html>

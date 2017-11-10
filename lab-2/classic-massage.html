@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Klassisk massage</title>
+    <title>Classic massage</title>
 
     <!-- Bootstrap -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
@@ -22,33 +22,84 @@
     <![endif]-->
     </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-                <a class="navbar-brand" href="#"><span><i class="fa fa-sign-language" aria-hidden="true"></i> Gittans</span></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid bg-info">
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><span><i class="fa fa-sign-language" aria-hidden="true"></i> Git's</span></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse-1">        
+            <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Treatments
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="treatments.html">All treatments</a></li>
+                          <li class="active"><a href="classic-massage.html">Classic Massage</a></li>
+                          <li><a href="tactile-massage.html">Tactile Massage</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="about.html">About</a></li>
+            </ul>
             </div>
-            <div class="collapse navbar-collapse" id="collapse-1">        
-        <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Treatments
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li class="active"><a href="#">Classic Massage</a></li>
-                      <li><a href="#">Tactile Massage</a></li>
-                    </ul>
-                  </li>
-                <li><a href="#">About</a></li>
-        </ul>
         </div>
-    </div>
-    </div>
-</nav>
+        </div>
+    </nav>
+
+      <h1 class="text-center text-info">Classic massage</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="img-responsive" src="images/couple.jpg">
+          </div>
+          <div class="col-sm-8">
+            <p class="lead">Irony umami literally, chia austin echo park tilde iPhone truffaut wolf subway tile. Organic humblebrag trust fund, post-ironic snackwave venmo paleo thundercats neutra marfa. Glossier knausgaard gastropub taiyaki cray church-key, ethical biodiesel. Before they sold out DIY chillwave cardigan letterpress seitan. Tilde irony taiyaki jianbing seitan actually, hexagon wolf before they sold out cold-pressed kitsch banh mi. Tattooed pop-up scenester street art tumblr knausgaard, occupy keffiyeh. Bushwick organic chambray air plant subway tile occupy DIY vape hot chicken. Copper mug venmo food truck banjo hexagon marfa ethical hot chicken dreamcatcher shaman. Banh mi ennui distillery 3 wolf moon wolf brooklyn, tattooed +1 sriracha cold-pressed kale chips. Schlitz prism lumbersexual cloud bread banjo, cold-pressed chambray literally mlkshk. Keytar pop-up gastropub street art, prism deep v slow-carb vinyl knausgaard hoodie tumeric.</p>
+          </div>
+        </div>
+        <h2 class="text-center text-info">Make a reservation</h2>
+        <form action="/action_page.php" method="post" class="form-horizontal">
+          <div class="form-group">
+                  <label class="control-label col-sm-2" for="firstname">Firstname:</label>
+                  <div class="col-sm-4">
+                    <input type="name" class="form-control" id="firstname" placeholder="Firstname">
+                  </div>
+                  <label class="control-label col-sm-2" for="lastname">Lastname:</label>
+                  <div class="col-sm-4">
+                  <input type="lastname" class="form-control" id="lastname" placeholder="Lastname">
+                  </div>
+              </div>        
+              <div class="form-group">    
+                  <label class="control-label col-sm-2" for="email">E-mail:</label>
+                  <div class="col-sm-4">
+                  <input type="gender" class="form-control" id="email" placeholder="youremail@example.com">
+                  </div>
+              </div>
+              <div class="form-group">    
+                      <label class="control-label col-sm-2" for="date">Date:</label>
+                      <div class="col-sm-10">
+                      <input type="title" class="form-control" id="date" placeholder="YY/MM/DD">
+                      </div>
+                  </div>
+              <div class="form-group">    
+                      <label class="control-label col-sm-2" for="message">Message</label>
+                      <div class="col-sm-10">
+                      <textarea type="summary" class="form-control" rows="2" id="message" placeholder="Additional information here"></textarea>
+                      <br>
+                      <button class="btn btn-primary pull-right" name="submit" type="submit">Submit reservation</button>
+                  </div>
+                  </div>
+        </form>
+      </div>
+      <ol class="breadcrumb">
+          <li><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></li>
+          <li><a href="treatments.html">All treatments</a></li>
+          <li class="active">Classic massage</li>
+        </ol>
 </body>
 </html>
